@@ -11,7 +11,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RGBsliders" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -103,7 +102,17 @@
                             <constraint firstItem="kNI-MC-bWu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="y5n-1q-PV4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueColorLabel" destination="KRT-oa-wbp" id="5ra-4E-izX"/>
+                        <outlet property="blueSlider" destination="ibY-YR-EtJ" id="t3J-DG-BQW"/>
+                        <outlet property="coloredView" destination="kNI-MC-bWu" id="DgG-RI-xpr"/>
+                        <outlet property="greenColorLabel" destination="J19-Vq-kSs" id="f0e-Fv-ahk"/>
+                        <outlet property="greenSlider" destination="Akr-Qv-BJb" id="65L-Mc-LBI"/>
+                        <outlet property="redColorLabel" destination="CVJ-A0-lRo" id="ByA-iZ-S0z"/>
+                        <outlet property="redSlider" destination="qHa-vh-oYs" id="c0B-Sp-yXt"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2.3999999999999999" y="83.208395802098963"/>
         </scene>
