@@ -32,7 +32,6 @@ class ViewController: UIViewController {
         blueSlider.value = startSliderValue
     }
 
-    
     @IBAction func redSliderAction() {
         redColorLabel.text = String(format: "%.02f", redSlider.value)
         setViewColor()
@@ -43,12 +42,10 @@ class ViewController: UIViewController {
         setViewColor()
     }
     
-    
     @IBAction func blueSliderAction() {
         blueColorLabel.text = String(format: "%.02f", blueSlider.value)
         setViewColor()
     }
-    
     
     private func setViewColor () {
         coloredView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
