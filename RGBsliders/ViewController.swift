@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         coloredView.layer.cornerRadius = 20
@@ -50,7 +49,5 @@ class ViewController: UIViewController {
     private func setViewColor () {
         coloredView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
     }
-    
-
 }
 
