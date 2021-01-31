@@ -38,6 +38,9 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qHa-vh-oYs">
                                         <rect key="frame" x="40" y="0.0" width="305" height="31"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
+                                        <connections>
+                                            <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="V7t-Ax-awm"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -59,6 +62,9 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Akr-Qv-BJb">
                                         <rect key="frame" x="40" y="0.0" width="289" height="31"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <connections>
+                                            <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="9xl-ns-g72"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -80,6 +86,9 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LqT-gt-CpP">
                                         <rect key="frame" x="40" y="0.0" width="289" height="31"/>
                                         <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <connections>
+                                            <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="jTE-Id-6KF"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -104,7 +113,7 @@
                     </view>
                     <connections>
                         <outlet property="blueColorLabel" destination="KRT-oa-wbp" id="5ra-4E-izX"/>
-                        <outlet property="blueSlider" destination="ibY-YR-EtJ" id="t3J-DG-BQW"/>
+                        <outlet property="blueSlider" destination="LqT-gt-CpP" id="t7R-CD-aXT"/>
                         <outlet property="coloredView" destination="kNI-MC-bWu" id="DgG-RI-xpr"/>
                         <outlet property="greenColorLabel" destination="J19-Vq-kSs" id="f0e-Fv-ahk"/>
                         <outlet property="greenSlider" destination="Akr-Qv-BJb" id="65L-Mc-LBI"/>
